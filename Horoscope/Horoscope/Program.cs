@@ -31,18 +31,22 @@ namespace Horoscope
 
             Console.WriteLine($"\nYour next birthday will be on a {nextBirthday.DayOfWeek}.");
 
-
+            //turns DateTime into in for if loop
             int month = birthday.Month;
             int day = birthday.Day;
 
+            //creates array for easy zodiac access 
             string[] zodiac = {"Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra",
                 "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"};
 
+            //creates strings for later use
             string sign = "0";
             string horoscope = "0";
 
+            //if loop that finds zodiac signs between two date parameters 
             if (month == 1 && day >= 20 || month == 2 && day <= 18)
             {
+                //picks sign from array and assigns horoscope
                 sign = zodiac[10];
                 horoscope = "Your ruler is Uranus. Celebrate your magical side this week by listening to" +
                     "\n\"Uranus - the Magician\" by Gustav Holst.";
@@ -144,6 +148,7 @@ namespace Horoscope
                 horoscope = "Error";
             }
 
+            //prints sign and horoscope to console for user 
             Console.WriteLine($"\nYour sign is : {sign}");
             Console.WriteLine($"\nYour horoscope: {horoscope}");
             Console.ReadLine();
