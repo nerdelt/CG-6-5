@@ -31,7 +31,7 @@ namespace Horoscope
 
             Console.WriteLine($"\nYour next birthday will be on a {nextBirthday.DayOfWeek}.");
 
-            //turns DateTime into in for if loop
+            //turns DateTime into int for if loop
             int month = birthday.Month;
             int day = birthday.Day;
 
