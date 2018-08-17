@@ -10,7 +10,7 @@ namespace Horoscope
             Console.WriteLine("This program will tell you the day of the week you were born,\n" +
                 "the day of the week your next birthday will be on,\nyour astrological sign, and  " +
                 "a horoscope.");
-            Console.Write("Please enter your birthday (MM/DD/YYYY): ");
+            Console.Write("\nPlease enter your birthday (MM/DD/YYYY): ");
 
             //Takes user input and converts to DateTime
             DateTime birthday = DateTime.Parse(Console.ReadLine());
