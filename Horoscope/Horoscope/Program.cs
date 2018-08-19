@@ -90,7 +90,7 @@ namespace Horoscope
             {
 
                 sign = zodiac[3];
-                horoscope = "Your ruler is the moon. If you get overwhelmed by your emotions this week," +
+                horoscope = "Your ruler is the Moon. If you get overwhelmed by your emotions this week," +
                     "\ntake some time to decompress and listen to songs such as \"Pink Moon\" by Nick Drake.";
             }
 
